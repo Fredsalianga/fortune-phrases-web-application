@@ -1,25 +1,34 @@
 import logo from './logo.svg';
 import './App.css';
+import { phrases } from './data/phrases';
+import React, { useState } from 'react';
+import backgroundImage from './Pictures/boston.jpg';
+
 
 function App() {
+  const [text, setText] = useState("");
+  const backgroundImageStyle = {
+    backgroundImage: `url(${backgroundImage})`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    height: '100vh',
+  };
+  const handClick = (e) =>{
+    const randomNumber = Math.floor(Math.random() * phrases.length);
+    console.log(phrases[randomNumber])
+    setText(phrases[randomNumber])
+    console.log("you clicked")
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div style={backgroundImageStyle}>
+      <div className='textphrase'>{text}</div>
+    <button onClick={e => handClick(e)}> Generate a Phrase</button>
+    </div>
+      
     </div>
   );
 }
+
 
 export default App;
