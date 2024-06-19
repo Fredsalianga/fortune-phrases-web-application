@@ -1,4 +1,29 @@
-# Getting Started with Create React App
+# Fortune Phrases Web Application.
+This web application is built using JavaScript, CSS, HTML, and React. The core functionality of the application is to generate fortune phrases that convey wisdom. These phrases are randomly generated with a single click. The data for the phrases can be found in the `src` folder.
+The app runs on React using `npm start`, which will launch it on `localhost:3000`. Below are the links to the React tutorial for further guidance.
+
+
+Mylinkedin : 
+      <style>
+        .libutton {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          padding: 7px;
+          text-align: center;
+          outline: none;
+          text-decoration: none !important;
+          color: #ffffff !important;
+          width: 200px;
+          height: 32px;
+          border-radius: 16px;
+          background-color: #0A66C2;
+          font-family: "SF Pro Text", Helvetica, sans-serif;
+        }
+      </style>
+<a class="libutton" href="https://www.linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=fred-salianga-13874b1a1" target="_blank">Follow on LinkedIn</a>
+
+### Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
